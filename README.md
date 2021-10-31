@@ -1,3 +1,3 @@
 # restaurant - website
 
-Technologies: git, html, css, flexboxgrid2, figma
+Technologies: git, html, css, flexboxgrid2, figma, chrome dev tools
