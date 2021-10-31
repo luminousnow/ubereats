@@ -4,438 +4,546 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/utility.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Uber Eats - find your beast pleace for eats</title>
   </head>
-  <body>
+
+  <body class="body">
     <header class="header">
-      <div class="menu">
-        <div class="menu__logo">
-          <img src="./img/logo.svg" alt="logo" />
-        </div>
-        <div class="menu__login">
-          <a href="/">Войти</a>
-        </div>
-        <div class="menu__logo">
-          <img src="./img/basket.svg" alt="иконка корзины" />
+      <div class="container">
+        <div
+          class="
+            row
+            middle-xs middle-sm middle-md middle-lg middle-xl
+            between-xs between-sm between-md between-lg between-xl
+          "
+        >
+          <div class="col-xs-5 col-sm-5 col-md-2 col-lg-2 col-xl-2">
+            <div class="header__logo">
+              <a href="./index.html"><img src="./img/logo.svg" alt="logo" /></a>
+            </div>
+          </div>
+
+          <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+            <div class="header__menu">
+              <div
+                class="
+                  row
+                  end-xs end-sm end-md end-lg end-xl
+                  middle-xs middle-sm middle-md middle-lg middle-xl
+                "
+              >
+                <div class="">
+                  <div class="header__login">
+                    <a href="/">Войти</a>
+                  </div>
+                </div>
+                <div class="hidden-xs hidden-sm">
+                  <div class="header__basket">
+                    <img src="./img/basket.svg" alt="иконка корзины" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
-    <main>
-      <div class="up"><a href="/">Up</a></div>
-      <input
-        type="search"
-        name="search"
-        id="search"
-        placeholder="Поиск по ресторанам и кухням"
-      />
-      <section class="section restaurant">
-        <h2 class="restaurant__title">Рестораны</h2>
-        <ul class="restaurant__list">
-          <li class="list__element">
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurants/mobile/restaurant-1@x1.jpg 1x,
-                  ./img/restaurants/mobile/restaurant-1@x2.jpg 2x
-                "
-                media="(max-width: 767px)"
+
+    <main class="main">
+      <div class="container">
+        <div
+          class="
+            row
+            top-xs top-sm top-md top-lg top-xl
+            center-xs center-sm center-md center-lg center-xl
+          "
+        >
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="input">
+              <input
+                class="search"
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Поиск по ресторанам и кухням"
               />
-              <source
-                srcset="
-                  ./img/restaurants/tablet/restaurant-1@x1.jpg 1x,
-                  ./img/restaurants/tablet/restaurant-1@x2.jpg 2x
-                "
-                media="(max-width: 1123px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/desktop/restaurant-1@x1.jpg 1x,
-                  ./img/restaurants/desktop/restaurant-1@x2.jpg 2x
-                "
-                media="(min-width: 1124px)"
-              />
-              <img
-                class="element__img"
-                src="./img/restaurants/mobile/restaurant-1@x1.jpg"
-                alt="Фото ресторана Макдоналдс"
-              />
-            </picture>
-            <h3 class="element__title">Макдоналдс</h3>
-            <ul class="element__tag">
-              <li>₽₽</li>
-              <li>Бургеры</li>
-            </ul>
-            <p class="element__time">25 - 35 мин</p>
-          </li>
-          <li class="list__element">
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurants/mobile/restaurant-2@x1.jpg 1x,
-                  ./img/restaurants/mobile/restaurant-2@x2.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/tablet/restaurant-2@x1.jpg 1x,
-                  ./img/restaurants/tablet/restaurant-2@x2.jpg 2x
-                "
-                media="(max-width: 1123px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/desktop/restaurant-2@x1.jpg 1x,
-                  ./img/restaurants/desktop/restaurant-2@x2.jpg 2x
-                "
-                media="(min-width: 1124px)"
-              />
-              <img
-                class="element__img"
-                src="./img/restaurants/mobile/restaurant-2@x1.jpg"
-                alt="Фото ресторана DimSum & Co"
-              />
-            </picture>
-            <h3 class="element__title">DimSum & Co</h3>
-            <ul class="element__tag">
-              <li>₽</li>
-              <li>Японская</li>
-              <li>Китайская</li>
-              <li>Азиатская</li>
-            </ul>
-            <p class="element__time">40 - 50 мин</p>
-          </li>
-          <li class="list__element">
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurants/mobile/restaurant-3@x1.jpg 1x,
-                  ./img/restaurants/mobile/restaurant-3@x2.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/tablet/restaurant-3@x1.jpg 1x,
-                  ./img/restaurants/tablet/restaurant-3@x2.jpg 2x
-                "
-                media="(max-width: 1123px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/desktop/restaurant-3@x1.jpg 1x,
-                  ./img/restaurants/desktop/restaurant-3@x2.jpg 2x
-                "
-                media="(min-width: 1124px)"
-              />
-              <img
-                class="element__img"
-                src="./img/restaurants/mobile/restaurant-3@x1.jpg"
-                alt="Фото ресторана ДвижОК"
-              />
-            </picture>
-            <h3 class="element__title">ДвижОК</h3>
-            <ul class="element__tag">
-              <li>₽</li>
-              <li>Американская</li>
-              <li>Европейская</li>
-            </ul>
-            <p class="element__time">35 - 45 мин</p>
-          </li>
-          <li class="list__element">
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurants/mobile/restaurant-4@x1.jpg 1x,
-                  ./img/restaurants/mobile/restaurant-4@x2.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/tablet/restaurant-4@x1.jpg 1x,
-                  ./img/restaurants/tablet/restaurant-4@x2.jpg 2x
-                "
-                media="(max-width: 1123px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/desktop/restaurant-4@x1.jpg 1x,
-                  ./img/restaurants/desktop/restaurant-4@x2.jpg 2x
-                "
-                media="(min-width: 1124px)"
-              />
-              <img
-                class="element__img"
-                src="./img/restaurants/mobile/restaurant-4@x1.jpg"
-                alt="Фото ресторана НЯ"
-              />
-            </picture>
-            <h3 class="element__title">НЯ</h3>
-            <ul class="element__tag">
-              <li>₽₽</li>
-              <li>Вьетнамская</li>
-            </ul>
-            <p class="element__time">30 - 40 мин</p>
-          </li>
-          <li class="list__element">
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurants/mobile/restaurant-5@x1.jpg 1x,
-                  ./img/restaurants/mobile/restaurant-5@x2.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/tablet/restaurant-5@x1.jpg 1x,
-                  ./img/restaurants/tablet/restaurant-5@x2.jpg 2x
-                "
-                media="(max-width: 1123px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/desktop/restaurant-5@x1.jpg 1x,
-                  ./img/restaurants/desktop/restaurant-5@x2.jpg 2x
-                "
-                media="(min-width: 1124px)"
-              />
-              <img
-                class="element__img"
-                src="./img/restaurants/mobile/restaurant-5@x1.jpg"
-                alt="Фото ресторана Точка Дзы"
-              />
-            </picture>
-            <h3 class="element__title">Точка Дзы</h3>
-            <ul class="element__tag">
-              <li>₽₽</li>
-              <li>Вьетнамская</li>
-            </ul>
-            <p class="element__time">40 - 50 мин</p>
-          </li>
-          <li class="list__element">
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurants/mobile/restaurant-6@x1.jpg 1x,
-                  ./img/restaurants/mobile/restaurant-6@x2.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/tablet/restaurant-6@x1.jpg 1x,
-                  ./img/restaurants/tablet/restaurant-6@x2.jpg 2x
-                "
-                media="(max-width: 1123px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/desktop/restaurant-6@x1.jpg 1x,
-                  ./img/restaurants/desktop/restaurant-6@x2.jpg 2x
-                "
-                media="(min-width: 1124px)"
-              />
-              <img
-                class="element__img"
-                src="./img/restaurants/mobile/restaurant-6@x1.jpg"
-                alt="Фото ресторана Cinnabon"
-              />
-            </picture>
-            <h3 class="element__title">Cinnabon</h3>
-            <ul class="element__tag">
-              <li>₽</li>
-              <li>Выпечка</li>
-              <li>Десерты</li>
-              <li>Капкейки</li>
-            </ul>
-            <p class="element__time">25 - 35 мин</p>
-          </li>
-          <li class="list__element">
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurants/mobile/restaurant-7@x1.jpg 1x,
-                  ./img/restaurants/mobile/restaurant-7@x2.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/tablet/restaurant-7@x1.jpg 1x,
-                  ./img/restaurants/tablet/restaurant-7@x2.jpg 2x
-                "
-                media="(max-width: 1123px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/desktop/restaurant-7@x1.jpg 1x,
-                  ./img/restaurants/desktop/restaurant-7@x2.jpg 2x
-                "
-                media="(min-width: 1124px)"
-              />
-              <img
-                class="element__img"
-                src="./img/restaurants/mobile/restaurant-7@x1.jpg"
-                alt="Фото ресторана PIZZELOVE"
-              />
-            </picture>
-            <h3 class="element__title">PIZZELOVE</h3>
-            <ul class="element__tag">
-              <li>₽₽</li>
-              <li>Пицца</li>
-            </ul>
-            <p class="element__time">15 - 25 мин</p>
-          </li>
-          <li class="list__element">
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurants/mobile/restaurant-8@x1.jpg 1x,
-                  ./img/restaurants/mobile/restaurant-8@x2.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/tablet/restaurant-8@x1.jpg 1x,
-                  ./img/restaurants/tablet/restaurant-8@x2.jpg 2x
-                "
-                media="(max-width: 1123px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/desktop/restaurant-8@x1.jpg 1x,
-                  ./img/restaurants/desktop/restaurant-8@x2.jpg 2x
-                "
-                media="(min-width: 1124px)"
-              />
-              <img
-                class="element__img"
-                src="./img/restaurants/mobile/restaurant-8@x1.jpg"
-                alt="Фото ресторана Zю кафе"
-              />
-            </picture>
-            <h3 class="element__title">Zю кафе</h3>
-            <ul class="element__tag">
-              <li>₽₽</li>
-              <li>Японская</li>
-            </ul>
-            <p class="element__time">25 - 35 мин</p>
-          </li>
-          <li class="list__element">
-            <picture>
-              <source
-                srcset="
-                  ./img/restaurants/mobile/restaurant-9@x1.jpg 1x,
-                  ./img/restaurants/mobile/restaurant-9@x2.jpg 2x
-                "
-                media="(max-width: 767px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/tablet/restaurant-9@x1.jpg 1x,
-                  ./img/restaurants/tablet/restaurant-9@x2.jpg 2x
-                "
-                media="(max-width: 1123px)"
-              />
-              <source
-                srcset="
-                  ./img/restaurants/desktop/restaurant-9@x1.jpg 1x,
-                  ./img/restaurants/desktop/restaurant-9@x2.jpg 2x
-                "
-                media="(min-width: 1124px)"
-              />
-              <img
-                class="element__img"
-                src="./img/restaurants/mobile/restaurant-9@x1.jpg"
-                alt="Фото ресторана Bar BQ Cafe"
-              />
-            </picture>
-            <h3 class="element__title">Bar BQ Cafe</h3>
-            <ul class="element__tag">
-              <li>₽₽₽</li>
-              <li>Европейская</li>
-            </ul>
-            <p class="element__time">30 - 40 мин</p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-      <div>
-        <img src="./img/white-logo.svg" alt="logo" />
-      </div>
-      <select name="language" id="language">
-        <option value="ru">Руский</option>
-        <option value="ua">Українська</option>
-        <option value="en">English</option>
-      </select>
-      <div class="info">
-        <div class="info__social">
-          <a href="/" target="_blank" rel="noopener noreferrer"
-            ><span>#</span>UberEats</a
-          >
-          <a href="/" target="_blank" rel="noopener noreferrer"
-            ><img src="./img/facebook.svg" alt="facebook"
-          /></a>
-          <a href="/" target="_blank" rel="noopener noreferrer"
-            ><img src="./img/twitter.svg" alt="twiter"
-          /></a>
-          <a href="/" target="_blank" rel="noopener noreferrer"
-            ><img src="./img/instagram.svg" alt="instagram"
-          /></a>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <section class="section restaurant">
+              <h2 class="section__title">Рестораны</h2>
+              <ul class="restaurant__list">
+                <div
+                  class="
+                    row
+                    top-xs top-sm top-md top-lg top-xl
+                    start-xs start-sm start-md start-lg start-xl
+                  "
+                >
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <li class="list__element">
+                      <picture>
+                        <source
+                          srcset="
+                            ./img/restaurants/mobile/restaurant-1@x1.jpg 1x,
+                            ./img/restaurants/mobile/restaurant-1@x2.jpg 2x
+                          "
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/tablet/restaurant-1@x1.jpg 1x,
+                            ./img/restaurants/tablet/restaurant-1@x2.jpg 2x
+                          "
+                          media="(max-width: 1123px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/desktop/restaurant-1@x1.jpg 1x,
+                            ./img/restaurants/desktop/restaurant-1@x2.jpg 2x
+                          "
+                          media="(min-width: 1124px)"
+                        />
+                        <img
+                          class="element__img"
+                          src="./img/restaurants/mobile/restaurant-1@x1.jpg"
+                          alt="Фото ресторана Макдоналдс"
+                        />
+                      </picture>
+                      <h3 class="element__title">Макдоналдс</h3>
+                      <ul class="element__tag">
+                        <li>₽₽</li>
+                        <li>Бургеры</li>
+                      </ul>
+                      <p class="element__time">25 - 35 мин</p>
+                    </li>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <li class="list__element">
+                      <picture>
+                        <source
+                          srcset="
+                            ./img/restaurants/mobile/restaurant-2@x1.jpg 1x,
+                            ./img/restaurants/mobile/restaurant-2@x2.jpg 2x
+                          "
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/tablet/restaurant-2@x1.jpg 1x,
+                            ./img/restaurants/tablet/restaurant-2@x2.jpg 2x
+                          "
+                          media="(max-width: 1123px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/desktop/restaurant-2@x1.jpg 1x,
+                            ./img/restaurants/desktop/restaurant-2@x2.jpg 2x
+                          "
+                          media="(min-width: 1124px)"
+                        />
+                        <img
+                          class="element__img"
+                          src="./img/restaurants/mobile/restaurant-2@x1.jpg"
+                          alt="Фото ресторана DimSum & Co"
+                        />
+                      </picture>
+                      <h3 class="element__title">DimSum & Co</h3>
+                      <ul class="element__tag">
+                        <li>₽</li>
+                        <li>Японская</li>
+                        <li>Китайская</li>
+                        <li>Азиатская</li>
+                      </ul>
+                      <p class="element__time">40 - 50 мин</p>
+                    </li>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <li class="list__element">
+                      <picture>
+                        <source
+                          srcset="
+                            ./img/restaurants/mobile/restaurant-3@x1.jpg 1x,
+                            ./img/restaurants/mobile/restaurant-3@x2.jpg 2x
+                          "
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/tablet/restaurant-3@x1.jpg 1x,
+                            ./img/restaurants/tablet/restaurant-3@x2.jpg 2x
+                          "
+                          media="(max-width: 1123px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/desktop/restaurant-3@x1.jpg 1x,
+                            ./img/restaurants/desktop/restaurant-3@x2.jpg 2x
+                          "
+                          media="(min-width: 1124px)"
+                        />
+                        <img
+                          class="element__img"
+                          src="./img/restaurants/mobile/restaurant-3@x1.jpg"
+                          alt="Фото ресторана ДвижОК"
+                        />
+                      </picture>
+                      <h3 class="element__title">ДвижОК</h3>
+                      <ul class="element__tag">
+                        <li>₽</li>
+                        <li>Американская</li>
+                        <li>Европейская</li>
+                      </ul>
+                      <p class="element__time">35 - 45 мин</p>
+                    </li>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <li class="list__element">
+                      <picture>
+                        <source
+                          srcset="
+                            ./img/restaurants/mobile/restaurant-4@x1.jpg 1x,
+                            ./img/restaurants/mobile/restaurant-4@x2.jpg 2x
+                          "
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/tablet/restaurant-4@x1.jpg 1x,
+                            ./img/restaurants/tablet/restaurant-4@x2.jpg 2x
+                          "
+                          media="(max-width: 1123px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/desktop/restaurant-4@x1.jpg 1x,
+                            ./img/restaurants/desktop/restaurant-4@x2.jpg 2x
+                          "
+                          media="(min-width: 1124px)"
+                        />
+                        <img
+                          class="element__img"
+                          src="./img/restaurants/mobile/restaurant-4@x1.jpg"
+                          alt="Фото ресторана НЯ"
+                        />
+                      </picture>
+                      <h3 class="element__title">НЯ</h3>
+                      <ul class="element__tag">
+                        <li>₽₽</li>
+                        <li>Вьетнамская</li>
+                      </ul>
+                      <p class="element__time">30 - 40 мин</p>
+                    </li>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <li class="list__element hidden-xs hidden-sm">
+                      <picture>
+                        <source
+                          srcset="./img/no-image.png 1x, ./img/no-image.png 2x"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/tablet/restaurant-5@x1.jpg 1x,
+                            ./img/restaurants/tablet/restaurant-5@x2.jpg 2x
+                          "
+                          media="(max-width: 1123px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/desktop/restaurant-5@x1.jpg 1x,
+                            ./img/restaurants/desktop/restaurant-5@x2.jpg 2x
+                          "
+                          media="(min-width: 1124px)"
+                        />
+                        <img
+                          class="element__img"
+                          src="./img/restaurants/tablet/restaurant-5@x1.jpg"
+                          alt="Фото ресторана Точка Дзы"
+                        />
+                      </picture>
+                      <h3 class="element__title">Точка Дзы</h3>
+                      <ul class="element__tag">
+                        <li>₽₽</li>
+                        <li>Вьетнамская</li>
+                      </ul>
+                      <p class="element__time">40 - 50 мин</p>
+                    </li>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <li class="list__element hidden-xs hidden-sm">
+                      <picture>
+                        <source
+                          srcset="./img/no-image.png 1x, ./img/no-image.png 2x"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/tablet/restaurant-6@x1.jpg 1x,
+                            ./img/restaurants/tablet/restaurant-6@x2.jpg 2x
+                          "
+                          media="(max-width: 1123px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/desktop/restaurant-6@x1.jpg 1x,
+                            ./img/restaurants/desktop/restaurant-6@x2.jpg 2x
+                          "
+                          media="(min-width: 1124px)"
+                        />
+                        <img
+                          class="element__img"
+                          src="./img/restaurants/tablet/restaurant-6@x1.jpg"
+                          alt="Фото ресторана Cinnabon"
+                        />
+                      </picture>
+                      <h3 class="element__title">Cinnabon</h3>
+                      <ul class="element__tag">
+                        <li>₽</li>
+                        <li>Выпечка</li>
+                        <li>Десерты</li>
+                        <li>Капкейки</li>
+                      </ul>
+                      <p class="element__time">25 - 35 мин</p>
+                    </li>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <li class="list__element hidden-xs hidden-sm">
+                      <picture>
+                        <source
+                          srcset="./img/no-image.png 1x, ./img/no-image.png 2x"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/tablet/restaurant-7@x1.jpg 1x,
+                            ./img/restaurants/tablet/restaurant-7@x2.jpg 2x
+                          "
+                          media="(max-width: 1123px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/desktop/restaurant-7@x1.jpg 1x,
+                            ./img/restaurants/desktop/restaurant-7@x2.jpg 2x
+                          "
+                          media="(min-width: 1124px)"
+                        />
+                        <img
+                          class="element__img"
+                          src="./img/restaurants/tablet/restaurant-7@x1.jpg"
+                          alt="Фото ресторана PIZZELOVE"
+                        />
+                      </picture>
+                      <h3 class="element__title">PIZZELOVE</h3>
+                      <ul class="element__tag">
+                        <li>₽₽</li>
+                        <li>Пицца</li>
+                      </ul>
+                      <p class="element__time">15 - 25 мин</p>
+                    </li>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <li class="list__element hidden-xs hidden-sm">
+                      <picture>
+                        <source
+                          srcset="./img/no-image.png 1x, ./img/no-image.png 2x"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/tablet/restaurant-8@x1.jpg 1x,
+                            ./img/restaurants/tablet/restaurant-8@x2.jpg 2x
+                          "
+                          media="(max-width: 1123px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/desktop/restaurant-8@x1.jpg 1x,
+                            ./img/restaurants/desktop/restaurant-8@x2.jpg 2x
+                          "
+                          media="(min-width: 1124px)"
+                        />
+                        <img
+                          class="element__img"
+                          src="./img/restaurants/tablet/restaurant-8@x1.jpg"
+                          alt="Фото ресторана Zю кафе"
+                        />
+                      </picture>
+                      <h3 class="element__title">Zю кафе</h3>
+                      <ul class="element__tag">
+                        <li>₽₽</li>
+                        <li>Японская</li>
+                      </ul>
+                      <p class="element__time">25 - 35 мин</p>
+                    </li>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+                    <li class="list__element hidden-xs hidden-sm">
+                      <picture>
+                        <source
+                          srcset="./img/no-image.png 1x, ./img/no-image.png 2x"
+                          media="(max-width: 767px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/tablet/restaurant-9@x1.jpg 1x,
+                            ./img/restaurants/tablet/restaurant-9@x2.jpg 2x
+                          "
+                          media="(max-width: 1123px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/restaurants/desktop/restaurant-9@x1.jpg 1x,
+                            ./img/restaurants/desktop/restaurant-9@x2.jpg 2x
+                          "
+                          media="(min-width: 1124px)"
+                        />
+                        <img
+                          class="element__img"
+                          src="./img/restaurants/tablet/restaurant-9@x1.jpg"
+                          alt="Фото ресторана Bar BQ Cafe"
+                        />
+                      </picture>
+                      <h3 class="element__title">Bar BQ Cafe</h3>
+                      <ul class="element__tag">
+                        <li>₽₽₽</li>
+                        <li>Европейская</li>
+                      </ul>
+                      <p class="element__time">30 - 40 мин</p>
+                    </li>
+                  </div>
+                </div>
+              </ul>
+            </section>
+          </div>
         </div>
-        <ul class="info__commerse">
-          <li><a href="/">Об UberEats</a></li>
-          <li><a href="/">Станьте партнёром по доставке</a></li>
-          <li><a href="/">Станьте парнёром-рестораном</a></li>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <img src="./img/white-logo.svg" alt="logo" />
+        </div>
+        <select name="language" id="language">
+          <option value="ru">Руский</option>
+          <option value="ua">Українська</option>
+          <option value="en">English</option>
+        </select>
+        <div class="info">
+          <div
+            class="
+              row
+              middle-xs middle-sm middle-md middle-lg middle-xl
+              center-xs center-sm center-md center-lg center-xl
+            "
+          >
+            <div class="col-xs-5 col-sm-5 col-md-2 col-lg-2 col-xl-2">
+              <div class="info__social">
+                <div
+                  class="
+                    row
+                    middle-xs middle-sm middle-md middle-lg middle-xl
+                    center-xs center-sm center-md center-lg center-xl
+                  "
+                >
+                  <div class="col-xs col-sm col-md col-lg col-x">
+                    <a href="/" target="_blank" rel="noopener noreferrer"
+                      ><span>#</span>UberEats</a
+                    >
+                  </div>
+                </div>
+                <div
+                  class="
+                    row
+                    middle-xs middle-sm middle-md middle-lg middle-xl
+                    center-xs center-sm center-md center-lg center-xl
+                  "
+                >
+                  <div class="col-xs col-sm col-md col-lg col-xl">
+                    <a href="/" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/facebook.svg" alt="facebook"
+                    /></a>
+                  </div>
+                  <div class="col-xs col-sm col-md col-lg col-xl">
+                    <a href="/" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/twitter.svg" alt="twiter"
+                    /></a>
+                  </div>
+                  <div class="col-xs col-sm col-md col-lg col-xl">
+                    <a href="/" target="_blank" rel="noopener noreferrer"
+                      ><img src="./img/instagram.svg" alt="instagram"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="info__commerse">
+              <li><a href="/">Об UberEats</a></li>
+              <li><a href="/">Станьте партнёром по доставке</a></li>
+              <li><a href="/">Станьте парнёром-рестораном</a></li>
+            </ul>
+            <ul class="info__user">
+              <li><a href="/">Все города</a></li>
+              <li><a href="/">Цены</a></li>
+              <li><a href="/">Помощь</a></li>
+              <li><a href="/">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="app__list">
+          <li>
+            <a href="/"
+              ><img
+                class="appstore"
+                src="./img/appstore.png"
+                alt="скачать с App store"
+            /></a>
+          </li>
+          <li>
+            <a href="/">
+              <img
+                class="googleplay"
+                src="./img/googleplay.png"
+                alt="скачать с Google Play"
+              />
+            </a>
+          </li>
         </ul>
-        <ul class="info__user">
-          <li><a href="/">Все города</a></li>
-          <li><a href="/">Цены</a></li>
-          <li><a href="/">Помощь</a></li>
-          <li><a href="/">FAQs</a></li>
+        <ul class="copirights">
+          <li>&copy; 2017 Uber Technologies Inc.</li>
+          <li>
+            <a href="/" target="_blank" rel="noopener noreferrer"
+              >Обработка персональных данных</a
+            >
+          </li>
+          <li>
+            <a href="/" target="_blank" rel="noopener noreferrer"
+              >Пользовательское соглашение</a
+            >
+          </li>
         </ul>
       </div>
-      <ul class="app__list">
-        <li>
-          <a href="/"
-            ><img
-              class="appstore"
-              src="./img/appstore.png"
-              alt="скачать с App store"
-          /></a>
-        </li>
-        <li>
-          <a href="/">
-            <img
-              class="googleplay"
-              src="./img/googleplay.png"
-              alt="скачать с Google Play"
-            />
-          </a>
-        </li>
-      </ul>
-      <ul class="copirights">
-        <li>&copy; 2017 Uber Technologies Inc.</li>
-        <li>
-          <a href="/" target="_blank" rel="noopener noreferrer"
-            >Обработка персональных данных</a
-          >
-        </li>
-        <li>
-          <a href="/" target="_blank" rel="noopener noreferrer"
-            >Пользовательское соглашение</a
-          >
-        </li>
-      </ul>
     </footer>
   </body>
 </html>
