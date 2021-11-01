@@ -94,6 +94,23 @@ body {
 
 .element__title {
   margin-bottom: 5px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #1d1d1d;
+}
+
+.element__title a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+.element__title a:focus,
+.element__title a:hover {
+  color: #49a144;
 }
 
 .element__tag {
