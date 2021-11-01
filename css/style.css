@@ -69,6 +69,7 @@ body {
 
   border: none;
   border-bottom: 1px solid #757575;
+  border-radius: 0;
   opacity: 0.5;
 }
 
@@ -77,12 +78,18 @@ body {
   margin-bottom: 15px;
 }
 
-.restaurant__list {
-  margin: -8px;
+@media only screen and (min-width: 768px) {
+  .restaurant__list {
+    margin: -8px;
+  }
+
+  .list__element {
+    margin: 8px;
+  }
 }
 
-.list__element {
-  margin: 8px;
+.list__element img {
+  margin-bottom: 15px;
 }
 
 .element__title {
@@ -112,9 +119,116 @@ body {
 }
 
 .footer {
+  padding-top: 55px;
+  padding-bottom: 40px;
   background: #262626;
 }
 
-.info__social img {
+.footer,
+.footer a {
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.footer a:hover,
+.footer a :focus {
+  color: #bababa;
+}
+
+.logo__wrapper {
+  padding-bottom: 40px;
+  margin-bottom: 32px;
+
+  border-bottom: solid 1px #ffffff;
+}
+
+.logo__img {
+  width: 192px;
+}
+
+.info__social {
+  margin-bottom: 40px;
+}
+
+.info {
+  padding-bottom: 40px;
+  margin-bottom: 25px;
+
+  border-bottom: solid 1px #ffffff;
+}
+
+.info__social .green {
+  color: #49a144;
+}
+
+.info__social select {
+  margin-bottom: 35px;
+}
+
+.info__social .hash {
+  margin-bottom: 15px;
+}
+
+.social_nets {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.social_nets a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.social_nets img {
   width: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+  .info__commerse {
+    margin-bottom: 25px;
+  }
+}
+
+.info__commerse li:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.info__user li:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.app__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
+
+  border-bottom: solid 1px #ffffff;
+}
+
+.app__list li:not(:last-child) {
+  margin-right: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .app__list li:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.appstore,
+.googleplay {
+  height: 36px;
+}
+
+.copirights {
+  margin-bottom: 40px;
+}
+
+.copirights li:not(:last-child) {
+  margin-bottom: 25px;
 }
