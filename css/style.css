@@ -237,11 +237,9 @@ body {
   }
 }
 
-.app__list .appstore {
-  width: 110px;
-}
-.app__list .googleplay {
-  width: 124px;
+.appstore,
+.googleplay {
+  height: 36px;
 }
 
 .copirights {
