@@ -237,8 +237,9 @@ body {
   }
 }
 
-.appstore,
-.googleplay {
+.app__list .appstore,
+.app__list .googleplay {
+  width: auto;
   height: 36px;
 }
 
