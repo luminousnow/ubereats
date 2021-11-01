@@ -73,11 +73,6 @@ body {
   opacity: 0.5;
 }
 
-input[type="search"] {
-  -webkit-appearance: none;
-  border-radius: 0px;
-}
-
 .section__title {
   text-align: left;
   margin-bottom: 15px;
