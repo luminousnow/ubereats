@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,18 +25,271 @@
     <title>Restaurant</title>
   </head>
   <body>
-    <div class="container">
-      <div
-        class="row top-xs top-sm top-md top-lg top-xl center-xs center-sm center-md center-lg center-xl"
-      >
+    <div class="up"></div>
+    <header class="header">
+      <div class="container">
         <div
-          class="col-xs col-sm col-md col-lg col-xl"
-          style="text-align: center"
+          class="row between-xs between-sm between-md between-lg between-xl middle-xs middle-sm middle-md middle-lg middle-xl"
         >
-          Hi! There is Restaurant page
+          <div class="col-xs-5 col-sm-5 col-md-2 col-lg-2 col-xl-2">
+            <div class="header__logo">
+              <a href="./index.html"><img src="./img/logo.svg" alt="logo" /></a>
+            </div>
+          </div>
+
+          <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+            <div class="header__menu">
+              <div
+                class="row middle-xs middle-sm middle-md middle-lg middle-xl end-xs end-sm end-md end-lg end-xl"
+              >
+                <div class="">
+                  <div class="header__login">
+                    <a href="/">Войти</a>
+                  </div>
+                </div>
+                <div class="hidden-xs hidden-sm">
+                  <div class="header__basket">
+                    <img src="./img/basket.svg" alt="иконка корзины" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="restaurant__container">
+          <div class="restaurant__info">
+            <h1 class="element__title">Трактир «Пушкин»</h1>
+            <ul class="element__tag">
+              <li>$$$</li>
+              <li>Европейская</li>
+            </ul>
+          </div>
+          <ul class="restaurant__category">
+            <li>Закуски</li>
+            <li>Салаты</li>
+            <li>Супы</li>
+            <li>Горячие блюда</li>
+            <li>Гарниры</li>
+            <li>Десерты</li>
+          </ul>
+          <h2 class="restaurant__category-name">Закуски</h2>
+          <ul class="restaurant__product-list">
+            <li class="product__card">
+              <div class="product__description">
+                <h3 class="product__titlt">Сельдь на бородинском хлебе</h3>
+                <p class="compound">С яйцом и огурцом</p>
+                <p class="price">240</p>
+              </div>
+              <img
+                src="./img/no-image.png"
+                alt="Фото Блюда"
+                class="product__image"
+              />
+            </li>
+            <li class="product__card">
+              <div class="product__description">
+                <h3 class="product__titlt">Соленья ассорти</h3>
+                <p class="compound"></p>
+                <p class="price">320</p>
+              </div>
+              <img
+                src="./img/no-image.png"
+                alt="Фото Блюда"
+                class="product__image"
+              />
+            </li>
+            <li class="product__card">
+              <div class="product__description">
+                <h3 class="product__titlt">Грибы маринованные</h3>
+                <p class="compound"></p>
+                <p class="price">300</p>
+              </div>
+              <img
+                src="./img/no-image.png"
+                alt="Фото Блюда"
+                class="product__image"
+              />
+            </li>
+            <li class="product__card">
+              <div class="product__description">
+                <h3 class="product__titlt">Сало домашнее с горчицей</h3>
+                <p class="compound"></p>
+                <p class="price">320</p>
+              </div>
+              <img
+                src="./img/no-image.png"
+                alt="Фото Блюда"
+                class="product__image"
+              />
+            </li>
+            <li class="product__card">
+              <div class="product__description">
+                <h3 class="product__titlt">Малосольная семга</h3>
+                <p class="compound"></p>
+                <p class="price">390</p>
+              </div>
+              <img
+                src="./img/no-image.png"
+                alt="Фото Блюда"
+                class="product__image"
+              />
+            </li>
+            <li class="product__card">
+              <div class="product__description">
+                <h3 class="product__titlt">Язык говяжий с хреном</h3>
+                <p class="compound"></p>
+                <p class="price">350</p>
+              </div>
+              <img
+                src="./img/no-image.png"
+                alt="Фото Блюда"
+                class="product__image"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div
+          class="logo__wrapper row start-xs start-sm start-md start-lg start-xl middle-xs middle-sm middle-md middl-lg middle-xl"
+        >
+          <div class="col-xs col-sm col-md col-lg col-xl">
+            <img class="logo__img" src="./img/white-logo.svg" alt="logo" />
+          </div>
+        </div>
+        <div
+          class="info row top-xs top-sm top-md top-lg top-xl start-xs start-sm start-md start-lg start-xl"
+        >
+          <div
+            class="info__links col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"
+          >
+            <div
+              class="links__inner row start-xs start-sm start-md start-lg start-xl middle-xs middle-sm middle-md middle-lg middle-xl"
+            >
+              <div
+                class="language col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+              >
+                <div class="__select" data-state="">
+                  <div class="__select__title" data-default="ru">Руский</div>
+                  <div class="__select__content">
+                    <input
+                      id="ru"
+                      class="__select__input"
+                      type="radio"
+                      name="language"
+                    />
+                    <label for="ru" class="__select__label">Руский</label>
+                    <input
+                      id="ua"
+                      class="__select__input"
+                      type="radio"
+                      name="language"
+                    />
+                    <label for="ua" class="__select__label">Українська</label>
+                    <input
+                      id="en"
+                      class="__select__input"
+                      type="radio"
+                      name="language"
+                    />
+                    <label for="en" class="__select__label">English</label>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="hash col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12"
+              >
+                <a
+                  class="hash__link"
+                  href="/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="green">#</span>UberEats
+                </a>
+              </div>
+            </div>
+            <div class="social_nets">
+              <a href="/" target="_blank" rel="noopener noreferrer">
+                <img src="./img/facebook.svg" alt="facebook" />
+              </a>
+              <a href="/" target="_blank" rel="noopener noreferrer">
+                <img src="./img/twitter.svg" alt="twiter" />
+              </a>
+              <a href="/" target="_blank" rel="noopener noreferrer">
+                <img src="./img/instagram.svg" alt="instagram" />
+              </a>
+            </div>
+          </div>
+          <div
+            class="info__commerse col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"
+          >
+            <ul>
+              <li><a href="/">Об UberEats</a></li>
+              <li><a href="/">Станьте партнёром по доставке</a></li>
+              <li><a href="/">Станьте парнёром-рестораном</a></li>
+            </ul>
+          </div>
+          <div
+            class="info__user col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4"
+          >
+            <ul>
+              <li><a href="/">Все города</a></li>
+              <li><a href="/">Цены</a></li>
+              <li><a href="/">Помощь</a></li>
+              <li><a href="/">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="app__list">
+          <ul>
+            <li>
+              <a href="/">
+                <img
+                  class="appstore"
+                  src="./img/appstore.png"
+                  alt="скачать с App store"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img
+                  class="googleplay"
+                  src="./img/googleplay.png"
+                  alt="скачать с Google Play"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <ul
+          class="copirights row middle-xs middle-sm middle-md middl-lg middle-xl center-xs center-sm center-md center-lg center-xl"
+        >
+          <li class="col-xs-12 col-sm-12 col-md col-lg col-xl">
+            &copy; 2017 Uber Technologies Inc.
+          </li>
+          <li class="col-xs-12 col-sm-12 col-md col-lg col-xl">
+            <a href="/" target="_blank" rel="noopener noreferrer"
+              >Обработка персональных данных</a
+            >
+          </li>
+          <li class="col-xs-12 col-sm-12 col-md col-lg col-xl">
+            <a href="/" target="_blank" rel="noopener noreferrer"
+              >Пользовательское соглашение</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
     <script src="./js/language-selector.js"></script>
   </body>
 </html>
