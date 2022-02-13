@@ -2,9 +2,25 @@
   position: relative;
   width: 175px;
   height: 40px;
+  background: #3b3b3b;
 }
 
-@media only screen and (min-width: 1124px) {
+.__select::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 16px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  transition: all 0.3s ease-out;
+  background-image: url("../img/world.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 999;
+}
+
+@media only screen and (min-width: 1200px) {
   .__select {
     width: 230px;
   }
@@ -32,10 +48,12 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 8px 16px;
-  border-radius: 5px;
-  border: solid 1px #c7ccd1;
+  padding: 8px 48px;
+  border-radius: 2px;
+  border: none;
   cursor: pointer;
+  left: 8px;
+  top: 1927px;
 }
 .__select__title::before,
 .__select__title::after {
@@ -47,29 +65,27 @@
   width: 10px;
   height: 2px;
   transition: all 0.3s ease-out;
-  background-color: #333333;
+  background-color: #fff;
   transform: translate(-3px, -50%) rotate(45deg);
 }
 .__select__title::after {
   transform: translate(3px, -50%) rotate(-45deg);
 }
-.__select__title:hover {
-  border-color: #d8093a;
-}
+/*  */
 .__select__title:hover::before,
 .__select__title:hover::after {
-  background-color: #d8093a;
+  background-color: #fff;
 }
 
 .__select__content {
   position: absolute;
   top: 40px;
-  left: 3px;
+  left: 0px;
   display: flex;
   flex-direction: column;
-  width: calc(100% - 6px);
-  background-color: #ffffff;
-  border: 1px solid #c7ccd1;
+  width: 100%;
+  background-color: #3b3b3b;
+  border: 2px solid #3b3b3b;
   border-top: none;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -82,7 +98,7 @@
   display: none;
 }
 .__select__input:checked + label {
-  background-color: #dedede;
+  background-color: #3b3b3b;
 }
 .__select__input:disabled + label {
   opacity: 0.6;
@@ -94,7 +110,6 @@
   align-items: center;
   width: 100%;
   height: 40px;
-  max-height: 0;
   padding: 0 16px;
   transition: all 0.2s ease-out;
   cursor: pointer;
@@ -104,6 +119,5 @@
   border-top: 0 solid #c7ccd160;
 }
 .__select__label:hover {
-  background-color: #d8093a !important;
   color: #ffffff;
 }
