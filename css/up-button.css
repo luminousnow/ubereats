@@ -1,0 +1,30 @@
+.up {
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  width: 64px;
+  height: 64px;
+  background: #59bd5a;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .up {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.up::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 7px);
+  display: block;
+  width: 15px;
+  height: 25px;
+  background-image: url("../img/up.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
