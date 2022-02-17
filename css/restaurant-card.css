@@ -1,0 +1,35 @@
+.restaurant__wrapper {
+  background-image: url("../img/restaurant__wrapper-bg/mobile/bg-1@x2.jpg");
+}
+
+@media only screen and (min-width: 678px) {
+  .restaurant__wrapper {
+    background-image: url("../img/restaurant__wrapper-bg/tablet/bg-1@x2.jpg");
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .restaurant__wrapper {
+    background-image: url("../img/restaurant__wrapper-bg/desktop/bg-1@x2.jpg");
+  }
+}
+
+.restaurant__info {
+  min-height: 205px;
+  margin: 80px 0px;
+  padding: 25px;
+
+  background-color: #fff;
+}
+
+.restaurant__info .element__title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@media only screen and (min-width: 678px) {
+  .restaurant__info .element__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
