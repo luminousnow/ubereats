@@ -22,12 +22,12 @@
   margin-bottom: 15px;
 }
 
-.element__title {
+.element__description .element__title {
   margin-bottom: 5px;
   line-height: 1.5;
 }
 
-.element__tag {
+.element__description .element__tag {
   display: flex;
   flex-direction: row;
   margin-bottom: 5px;
@@ -35,13 +35,13 @@
   color: #626262;
 }
 
-.element__tag li:not(:last-child)::after {
+.element__description .element__tag li:not(:last-child)::after {
   content: "•";
   display: inline-block;
   padding: 0px 2px;
 }
 
-.element__time {
+.element__description .element__time {
   margin-bottom: 20px;
 }
 
