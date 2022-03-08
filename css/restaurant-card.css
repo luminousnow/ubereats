@@ -93,15 +93,18 @@
   text-align: center;
 }
 
-.category__list {
+.categoty__outer {
   margin-bottom: 55px;
+
+  color: #626262;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+.category__list {
   padding: 30px 0px;
 
   font-size: 16px;
   line-height: 19px;
-
-  color: #626262;
-  border: 1px solid rgba(117, 117, 117, 0.2);
 }
 
 .category__list li {
