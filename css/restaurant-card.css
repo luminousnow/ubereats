@@ -3,6 +3,12 @@
   height: 255px;
 }
 
+@media only screen and (max-width: 767px) {
+  .restaurant__wrapper {
+    margin-bottom: 110px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .restaurant__wrapper {
     background-image: url("../img/restaurant__wrapper-bg/tablet/bg-1@x2.jpg");
@@ -13,13 +19,6 @@
 @media only screen and (min-width: 1124px) {
   .restaurant__wrapper {
     background-image: url("../img/restaurant__wrapper-bg/desktop/bg-1@x2.jpg");
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .main > .container {
-    padding-top: 110px;
-    padding-bottom: 40px;
   }
 }
 
@@ -124,7 +123,7 @@
 
 @media only screen and (max-width: 767px) {
   .restaurant__category-name {
-    margin-bottom: 45px;
+    margin-bottom: 55px;
 
     text-align: center;
   }
@@ -143,29 +142,44 @@
 }
 
 .restaurant__product-list {
-  margin: -25px -8px;
+  margin: -8px;
+  padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .restaurant__product-list {
+    margin: -16px;
     padding-bottom: 50px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .restaurant__product-list {
+    margin: -25px -8px;
     padding-bottom: 80px;
   }
 }
 
 .product__card {
-  margin: 25px 8px;
+  margin: 8px;
   display: flex;
   flex-direction: column;
 
   border: 1px solid rgba(117, 117, 117, 0.2);
   border-radius: 2px;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .product__card {
+    margin: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .product__card {
+    margin: 25px 8px;
+  }
 }
 
 .product__card:focus,
