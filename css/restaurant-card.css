@@ -131,11 +131,96 @@
     display: block;
     width: 50px;
     height: 1px;
-    /* margin: 0 auto; */
     position: relative;
     top: 10px;
     left: calc(50% - 25px);
 
     background-color: #757575;
+  }
+}
+
+.restaurant__product-list {
+  margin: -25px -8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .restaurant__product-list {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .restaurant__product-list {
+    padding-bottom: 80px;
+  }
+}
+
+.product__card {
+  margin: 25px 8px;
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.product__card:focus,
+.product__card:hover {
+  background-color: #75757566;
+}
+
+.product__description {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 100%;
+}
+
+.product__description .row {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #1d1d1d;
+}
+
+.compound {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.61;
+  flex: 1 1 auto;
+
+  color: #626262;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.4;
+
+  color: #1d1d1d;
+}
+
+.product__card img {
+  width: 100px;
+
+  border-radius: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .product__card img {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .product__card img {
+    width: 170px;
   }
 }
