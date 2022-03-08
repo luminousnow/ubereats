@@ -1,5 +1,9 @@
 .restaurant__wrapper {
   background-image: url("../img/restaurant__wrapper-bg/mobile/bg-1@x2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
   height: 255px;
 }
 
