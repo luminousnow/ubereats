@@ -43,8 +43,10 @@
   }
 }
 
-.info__links {
-  margin-bottom: 40px;
+@media only screen and (max-width: 767px) {
+  .info__links {
+    margin-bottom: 40px;
+  }
 }
 
 .links__inner .language {
@@ -74,6 +76,11 @@
   width: 24px;
 }
 
+.info__commerce {
+  font-size: 13px;
+  line-height: 1.15;
+}
+
 @media only screen and (max-width: 767px) {
   .info__commerce ul {
     margin-bottom: 25px;
@@ -84,29 +91,39 @@
   margin-bottom: 25px;
 }
 
+.info__user {
+  font-size: 13px;
+  line-height: 1.15;
+}
+
 .info__user li:not(:last-child) {
   margin-bottom: 25px;
 }
 
 .app__list {
-  padding-bottom: 24px;
   margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
   .app__list {
-    padding-bottom: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 }
 
 .app__list ul {
+  padding-bottom: 25px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 
   border-bottom: solid 1px #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  .app__list ul {
+    padding-bottom: 40px;
+  }
 }
 
 .app__list li:not(:last-child) {
@@ -132,16 +149,15 @@
 }
 
 .copirights {
-  margin-bottom: 40px;
-
   font-size: 11px;
-  line-height: 13px;
+  line-height: 1.18;
+  text-align: left;
 }
 
 @media only screen and (max-width: 767px) {
-  .copirights {
+  /* .copirights {
     text-align: left;
-  }
+  } */
 
   .copirights li:not(:last-child) {
     margin-bottom: 25px;
