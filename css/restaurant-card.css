@@ -145,26 +145,26 @@
   }
 }
 
-.restaurant__product-list {
+.restaurant__dish-list {
   margin: -8px;
   padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 768px) {
-  .restaurant__product-list {
+  .restaurant__dish-list {
     margin: -16px;
     padding-bottom: 50px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .restaurant__product-list {
+  .restaurant__dish-list {
     margin: -25px -8px;
     padding-bottom: 80px;
   }
 }
 
-.product__card {
+.dish__card {
   margin: 8px;
   display: flex;
   flex-direction: column;
@@ -175,19 +175,19 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .product__card {
+  .dish__card {
     margin: 16px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .product__card {
+  .dish__card {
     margin: 25px 8px;
   }
 }
 
-.product__card:focus,
-.product__card:hover {
+.dish__card:focus,
+.dish__card:hover {
   background-color: #75757566;
 }
 
@@ -228,20 +228,20 @@
   color: #1d1d1d;
 }
 
-.product__card img {
+.dish__card img {
   width: 100px;
 
   border-radius: 2px;
 }
 
 @media only screen and (min-width: 768px) {
-  .product__card img {
+  .dish__card img {
     width: 200px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .product__card img {
+  .dish__card img {
     width: 170px;
   }
 }

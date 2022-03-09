@@ -75,12 +75,12 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .info__commerse ul {
+  .info__commerce ul {
     margin-bottom: 25px;
   }
 }
 
-.info__commerse li:not(:last-child) {
+.info__commerce li:not(:last-child) {
   margin-bottom: 25px;
 }
 
